@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ResultCaluclator</title>
+    <link rel="stylesheet" href="./style.css">
+
+     
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+        <a href="">Student</a>
+        <a href="">Attendance</a>
+        <a href="">Help</a>
+    </nav>
+    </header>
+
+
+    <section id="about-student">
+        <h1>Welcome  <br/> <span> to Holy cross Portal</span></h1>
+        <input class="student-name" type="text" placeholder="enter student name">
+        <input class="student-roll"type="text" placeholder="enter student reg no">
+        <button id="submit-btn">Submit</button>
+
+        <p id="welcome-msg"></p>
+    </section>
+
+    <section class="marks-section">
+        <h2>Enter Subject Marks</h2>
+    
+        <form id="marks-form">
+            <div class="subject-group">
+                <label for="subject1">Subject 1</label>
+                <input type="number" id="subject1" name="subject1" placeholder="Enter marks for Subject 1" required>
+            </div>
+    
+            <div class="subject-group">
+                <label for="subject2">Subject 2</label>
+                <input type="number" id="subject2" name="subject2" placeholder="Enter marks for Subject 2" required>
+            </div>
+    
+            <div class="subject-group">
+                <label for="subject3">Subject 3</label>
+                <input type="number" id="subject3" name="subject3" placeholder="Enter marks for Subject 3" required>
+            </div>
+    
+            <div class="subject-group">
+                <label for="subject4">Subject 4</label>
+                <input type="number" id="subject4" name="subject4" placeholder="Enter marks for Subject 4" required>
+            </div>
+    
+            <div class="subject-group">
+                <label for="subject5">Subject 5</label>
+                <input type="number" id="subject5" name="subject5" placeholder="Enter marks for Subject 5" required>
+            </div>
+    
+            <button type="submit" id="calculate-btn">Calculate Total</button>
+            <button type="button" id="reset-btn">Reset Marks</button> <!-- Reset Button -->
+        </form>
+    </section>
+   
+    
+
+    <script src="./script.js"></script>
+</body>
+</html>

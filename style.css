@@ -1,0 +1,198 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  
+}
+
+body {
+    background-color: #dee4ee;            /* Classy light gray-blue */
+    font-family: 'Segoe UI', sans-serif;
+  }
+    
+
+header {
+  background-color: #333;
+  text-align: center;
+  padding: 20px;
+  z-index: 999;
+  color: white;
+  position: sticky;
+  top: 0;
+}
+
+
+.navbar {
+    display: flex;
+    justify-content: space-around;     /* equal spacing */
+    align-items: center;
+    background-color: #444;
+    padding: 10px 20px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+  
+  .navbar a {
+    text-decoration: none;
+    color: white;
+    font-weight: 400;
+    padding: 10px;
+    transition: color 0.3s ease;
+  }
+  
+  .navbar a:hover {
+    color: #1abc9c;                   /* greenish hover effect */
+  }
+  
+/* 2nd part */
+#about-student {
+  background-color: #f4f6fc;
+  padding: 40px;
+  text-align: center;
+  border-radius: 15px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  max-width: 500px;
+  margin: 40px auto;
+  font-family: "Sergoe UI", sans serif;
+}
+
+#about-student h1 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #2c3e50;
+}
+
+#about-student h1 span {
+  color: #1abc9c;
+  font-weight: bold;
+}
+
+#about-student input {
+  display: block;
+  width: 80%;
+  margin: 10px auto;
+  padding: 12px 15px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+#about-student input:focus {
+  border-color: #1abc9c;
+  outline: none;
+  box-shadow: 0 0 5px rgba(26, 188, 156, 0.5); /* Thoda glow effect jab input pe focus ho */
+}
+
+#submit-btn {
+  margin-top: 20px;
+  padding: 12px 30px;
+  background-color: #1abc9c;
+  border: none;
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#submit-btn:hover {
+  background-color: #16a085; /* Button hover hone par thoda dark green */
+}
+
+/* ===== Main container for marks section ===== */
+.marks-section {
+    background-color: #f9f9f9;                   /* halki light background */
+    padding: 40px 20px;                          /* andar padding */
+    width: 90%;                                  /* container will take 90% of screen width */
+    max-width: 800px;                            /* lekin 800px se zyada na ho */
+    margin: 40px auto;                           /* center mein rakha */
+    border-radius: 12px;                         /* round corners */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);   /* shadow for depth */
+    font-family: 'Segoe UI', sans-serif;
+    transition: width 0.3s ease;                 /* smooth resize effect */
+}
+
+/* ===== Heading style ===== */
+.marks-section h2 {
+    text-align: center;
+    color: #2c3e50;
+    margin-bottom: 30px;
+    font-size: 2rem;
+}
+
+/* ===== Subject input group ===== */
+.subject-group {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+/* ===== Label styling ===== */
+.subject-group label {
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: #34495e;
+}
+
+/* ===== Input box styling ===== */
+.subject-group input {
+    padding: 12px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    width: 100%;                                  /* input bhi 100% width le */
+}
+
+.subject-group input:focus {
+    border-color: #1abc9c;
+    box-shadow: 0 0 5px rgba(26, 188, 156, 0.3);
+    outline: none;
+}
+
+/* ===== Submit button ===== */
+#calculate-btn {
+    display: block;
+    width: 100%;                                  /* button bhi full width le */
+    padding: 14px;
+    background-color: #1abc9c;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+}
+
+#calculate-btn:hover {
+    background-color: #16a085;
+}
+
+
+#reset-btn {
+    display: block;
+    width: 100%;
+    padding: 14px;
+    background-color: #e74c3c;              /* red color for reset */
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    margin-top: 15px;
+    transition: background-color 0.3s ease;
+}
+
+#reset-btn:hover {
+    background-color: #c0392b;              /* darker red on hover */
+}
+
+
+@media (max-width: 480px) {
+    .marks-section {
+        width: 95%;                              /* chhoti screens par full width le */
+        padding: 30px 15px;
+    }
+}
